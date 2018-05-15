@@ -89,7 +89,7 @@ public class MainActivity extends SalesforceActivity {
 					@Override
 					public void run() {
 						try {
-							//this technique one is also showing error after one day
+							//this technique one is also showing error after one day.
 							Toast.makeText(MainActivity.this,"Valid Session",Toast.LENGTH_LONG).show();
 							String communityUrl= String.valueOf(client.getClientInfo().communityUrl);
 							System.out.println("community URL"+client.getClientInfo().communityUrl);
