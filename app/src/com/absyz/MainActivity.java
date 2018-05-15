@@ -93,8 +93,8 @@ public class MainActivity extends SalesforceActivity {
 							Toast.makeText(MainActivity.this,"Valid Session",Toast.LENGTH_LONG).show();
 							String communityUrl= String.valueOf(client.getClientInfo().communityUrl);
 							System.out.println("community URL"+client.getClientInfo().communityUrl);
-							String accessToken=client.getAuthToken();
-
+							//String accessToken=client.getAuthToken();
+							//instead of sending access token , we are sending refresh token , its working now , lets see after some time
 							OpenWebView(communityUrl,client.getRefreshToken());
 
 						} catch (Exception e) {
