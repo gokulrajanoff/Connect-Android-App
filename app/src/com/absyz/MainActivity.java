@@ -94,7 +94,8 @@ public class MainActivity extends SalesforceActivity {
 							String communityUrl= String.valueOf(client.getClientInfo().communityUrl);
 							System.out.println("community URL"+client.getClientInfo().communityUrl);
 							String accessToken=client.getAuthToken();
-							OpenWebView(communityUrl,accessToken);
+
+							OpenWebView(communityUrl,client.getRefreshToken());
 
 						} catch (Exception e) {
 							onError(e);
